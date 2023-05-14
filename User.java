@@ -1,15 +1,20 @@
-package BankBusinessLogic;
+package BookMyShow;
 
 public class User {
 
-	String userName;
-	String phoneNo;
-	String pwd;
+	String uname;
+	int pwd;
+	long phoneNo;
 
-	User(String userName, String phoneNo, String pwd) {
-		this.userName = userName;
-		this.phoneNo = phoneNo;
+	User(String uname, int pwd, long phoneNo) {
+		this.uname = uname;
 		this.pwd = pwd;
+		this.phoneNo = phoneNo;
+	}
+
+	@Override
+	public String toString() {
+		return "User Name: " + uname + " Password: " + pwd + " Phone Number: " + phoneNo;
 	}
 
 }
